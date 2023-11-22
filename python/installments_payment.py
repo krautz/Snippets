@@ -1,8 +1,8 @@
 def installments_payment(
-    installments_price,
-    installments_amount,
-    discount_price,
-    monthly_return = 0.01
+    installments_price,  # full price of the product, which will be paid in installments
+    installments_amount,  # number of installments
+    discount_price,  # discount price on paying without installments
+    monthly_return = 0.01  # estimated investments monthly return percentage
 ):
     profit = 0
     installment_price = installments_price / installments_amount
